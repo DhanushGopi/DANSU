@@ -1,0 +1,490 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 56%;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 2px solid rgb(199, 199, 199);
+    border-radius:0px 0px 20px 20px ;
+    box-shadow: 0px 15px 32px -13px rgba(0,0,0,0.4);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    }
+
+.navbar img {
+    width: 60px;
+    height: 70px;
+    }
+
+.nav {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.nav :hover{
+    border-bottom: 2px solid red;
+}
+
+#connect{
+    border-bottom: 2px solid red;
+}
+
+/* Contact */
+.contact{
+padding-bottom: 5%;
+}
+
+.contact p {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 5% 3% 2% 3%;
+}
+
+
+.icons{
+    padding-bottom: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.icons img{
+    width:200px;
+    height: 200px;
+}
+
+/* FOOTER */  
+
+.footer {
+    height: 50px;
+    font-size: 15px;
+    background-color: white;
+    border-top: 2px solid rgb(199, 199, 199);
+    border-radius:20px 20px 0px 0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    padding: 20px;
+    box-shadow: 0px -15px 32px -13px rgba(0,0,0,0.4);
+
+}
+.footer a{
+    text-decoration:none;
+    color: grey;
+    font-weight: bold;
+}
+
+.footer p {
+    color: grey;
+}
+
+
+/* Responsive Samsung Galaxy Fold (280x653) */
+
+@media screen and (min-width: 280px){
+
+    .navmid{
+        order: 1;
+    }
+
+    .navleft {
+        order: 2;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    .contact p{
+        padding-left:0.5em;
+    }
+    
+    .icons {
+        padding-bottom: 0%;
+    }
+}
+
+
+/* Responsive Samsung Galaxy S8+(360x740) */
+
+@media screen and (min-width: 360px){
+
+    .navmid{
+        order: 1;
+    }
+
+    .navleft {
+        order: 2;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    .contact p{
+        padding-left:1em;
+    }
+
+    .icons {
+        padding-bottom: 0%;
+    }
+}
+
+/* Responsive Iphone XR (414x896) */
+@media screen and (min-width: 414px){
+
+    .navmid{
+        order: 1;
+    }
+
+    .navleft {
+        order: 2;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    .icons {
+        padding-bottom: 0%;
+    }
+}
+
+/*Responsive Surface Duo (540x720)*/
+
+@media screen and (min-width: 540px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 180px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 15px;
+    }
+    .navbar img{
+        height: 50px;
+        width: 40px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    .icons {
+        padding-bottom: 0%;
+    }
+}
+
+/*Responsive Galaxy Tab S4 (712x1138)*/
+
+@media screen and (min-width: 712px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 280px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 20px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+}
+
+/*Responsive iPad MINI (768x1024)*/
+
+@media screen and (min-width: 768px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 280px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 20px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+}
+
+
+
+/*Responsive iPad Air (820x1180)*/
+
+@media screen and (min-width: 820px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 280px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 22px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    .footer{
+        font-size: 20px;
+    }
+}
+
+
+/*Responsive Surface Pro 7 (912x1368)*/
+
+@media screen and (min-width: 912px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 350px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 28px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    .contact p{
+        font-size: 70px;
+    }
+
+
+    .footer{
+        padding: 30px;
+        font-size: 30px;
+    }
+}
+
+/*Responsive Nest Hub (1024x600)*/
+
+@media screen and (min-width: 1024px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 350px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 25px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    .icons {
+        padding-bottom: 0%;
+    }
+
+    .footer{
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+/*Responsive Nest Hub max (1280x800)*/
+
+@media screen and (min-width: 1280px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 350px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 25px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    .footer{
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+
+/*Responsive Max intial size (2160x1080)*/
+
+@media screen and (min-width: 2160px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 550px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 35px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    .contact p{
+        font-size: 100px;
+    }
+
+    .icons img{
+        width: 500px;
+        height: 500px;
+    }
+    
+    .footer{
+        padding: 20px;
+        font-size: 20px;
+    }
+}

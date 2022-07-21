@@ -1,0 +1,604 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 56%;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 2px solid rgb(199, 199, 199);
+    border-radius:0px 0px 20px 20px ;
+    box-shadow: 0px 15px 32px -13px rgba(0,0,0,0.4);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    }
+
+.navbar img {
+    width: 60px;
+    height: 70px;
+    }
+
+.nav {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.nav :hover {
+    border-bottom: 2px solid red;
+}
+
+/* CONTENT */
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.content img{
+    margin-top: 7%;
+    width: 60%;
+    height: 40%;
+
+}
+
+.cta {
+    padding: 50px;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.cta a{
+    color:white;
+    text-decoration: none;
+    font-weight: normal;
+    background-color: black;
+    font-size: 20px;
+    padding: 20px 30px;
+    text-align: right;
+    border: none;
+    border-radius: 30px 30px 30px 0px;
+    transition-property: color background-color;
+    transition-duration: 1000ms;
+    transition-delay: 10ms;
+    transition-timing-function: ease-in-out;
+}
+
+.cta p{
+    font-weight: bolder;
+}
+
+.cta a:hover{
+    background-color: white;
+    border: 2px solid rgb(199, 199, 199);
+    color: black;
+}
+.content i{
+    color: rgb(222, 1, 1);
+    font-weight: 700;
+}
+
+/* FOOTER */  
+
+.footer {
+    height: 50px;
+    font-size: 15px;
+    background-color: white;
+    border-top: 2px solid rgb(199, 199, 199);
+    border-radius:20px 20px 0px 0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    padding: 20px;
+    box-shadow: 0px -15px 32px -13px rgba(0,0,0,0.4);
+}
+
+.footer a{
+    text-decoration:none;
+    color: grey;
+    font-weight: bold;
+}
+
+.footer p {
+    color: grey;
+}
+
+
+/* Responsive Samsung Galaxy Fold (280x653) */
+
+@media screen and (min-width: 280px){
+
+    .navmid{
+        order: 1;
+    }
+
+    .navleft {
+        order: 2;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    #mp{
+        font-size: 45px;
+    }
+
+    #me{
+        height: 180px;
+        width: 280px;
+    }
+}
+
+
+/* Responsive Samsung Galaxy S8+(360x740) */
+
+@media screen and (min-width: 360px){
+
+    .navmid{
+        order: 1;
+    }
+
+    .navleft {
+        order: 2;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    #mp{
+        font-size: 50px;
+    }
+
+    #me{
+        height: 220px;
+        width: 360px;
+    }
+}
+
+/* Responsive Iphone XR (414x896) */
+@media screen and (min-width: 414px){
+
+    .navmid{
+        order: 1;
+    }
+
+    .navleft {
+        order: 2;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    #mp{
+        font-size: 60px;
+    }
+
+    #me{
+        height: 260px;
+        width: 414px;
+    }
+}
+
+/*Responsive Surface Duo (540x720)*/
+
+@media screen and (min-width: 540px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 180px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 15px;
+    }
+    .navbar img{
+        height: 50px;
+        width: 40px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    #mp{
+        font-size: 60px;
+    }
+
+    #me{
+        height: 360px;
+        width: 540px;
+    }
+}
+
+/*Responsive Galaxy Tab S4 (712x1138)*/
+
+@media screen and (min-width: 712px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 280px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 20px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    #mp{
+        font-size: 90px;
+    }
+
+    #me{
+        height: 480px;
+        width: 712px;
+    }
+
+    #cta {
+        font-size: 30px;
+    }
+}
+
+/*Responsive iPad MINI (768x1024)*/
+
+@media screen and (min-width: 768px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 280px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 20px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    #mp{
+        font-size: 90px;
+    }
+
+    #me{
+        height: 515px;
+        width: 768px;
+    }
+
+    #cta {
+        font-size: 30px;
+    }
+}
+
+
+
+/*Responsive iPad Air (820x1180)*/
+
+@media screen and (min-width: 820px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 280px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 22px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    #mp{
+        font-size: 100px;
+    }
+
+    #me{
+        height: 550px;
+        width: 820px;
+    }
+
+    #cta {
+        font-size: 30px;
+    }
+
+    .footer{
+        font-size: 20px;
+    }
+}
+
+
+/*Responsive Surface Pro 7 (912x1368)*/
+
+@media screen and (min-width: 912px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 350px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 28px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    #mp{
+        font-size: 120px;
+    }
+
+    #me{
+        height: 600px;
+        width: 912px;
+    }
+
+    #cta {
+        font-size: 35px;
+    }
+
+    .footer{
+        padding: 30px;
+        font-size: 30px;
+    }
+}
+
+/*Responsive Nest Hub (1024x600)*/
+
+@media screen and (min-width: 1024px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 350px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 25px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    #mp{
+        font-size: 60px;
+    }
+
+    #me{
+        height: 425px;
+        width: 600px;
+    }
+
+    #cta {
+        font-size: 25px;
+    }
+
+    .footer{
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+/*Responsive Nest Hub (1280x800)*/
+
+@media screen and (min-width: 1280px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 350px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 25px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    #mp{
+        font-size: 70px;
+    }
+
+    #me{
+        height: 525px;
+        width: 750px;
+    }
+
+    #cta {
+        font-size: 25px;
+    }
+
+    .footer{
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+
+/*Responsive Max intial size (2160x1080)*/
+
+@media screen and (min-width: 2160px){
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 550px;
+        height: 0px;
+    }
+    .navbar a{
+        font-size: 35px;
+    }
+    .navbar img{
+        height: 100px;
+        width: 80px;
+    }
+
+    .navmid{
+        order: 2;
+    }
+
+    .navleft {
+        order: 1;
+    }
+    
+    .navright{
+        order:3;
+    }
+
+    #mp{
+        font-size: 100px;
+    }
+
+    #me{
+        height: 750px;
+        width: 1080px;
+    }
+
+    #cta {
+        font-size: 25px;
+    }
+
+    .footer{
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
