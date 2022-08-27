@@ -107,6 +107,10 @@ body{
     font-weight: 700;
 }
 
+#me {
+margin : 5px 5px 0px 5px;
+}
+
 /* FOOTER */  
 
 .footer {
