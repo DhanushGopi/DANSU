@@ -59,7 +59,7 @@ body{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-even;
     flex-wrap: wrap;
 
 }
